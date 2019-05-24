@@ -9,7 +9,7 @@ var LoopImages = function (imgArr, container) {
 var SlideLoopImg = function(imgArr, container) {
   LoopImages.call(this, imgArr, container);
   this.changeImage = function() {
-    console.log('修改上下滑动图片切换方法')
+    console.log('修改上下滑动图片切换方法');
   }
 }
 

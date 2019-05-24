@@ -1,0 +1,29 @@
+{
+  "name": "javascript-design-patterns",
+  "version": "1.0.0",
+  "description": "javascript 设计模式",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "standard": "^12.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lxw-peter/JavaScript-Design-Patterns.git"
+  },
+  "author": "lxw-peter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lxw-peter/JavaScript-Design-Patterns/issues"
+  },
+  "homepage": "https://github.com/lxw-peter/JavaScript-Design-Patterns#readme",
+  "standard": {
+    "ignore": [
+      "node_modules/",
+      ".gitignore"
+    ]
+  }
+}
