@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    
+    #container {
+      margin: 50px auto;
+      width: 1280px;
+      border: 1px solid #ccc;
+    }
+
+    #container div {
+      margin-bottom: 10px;
+      border: 1px solid red;
+    }
+    #tel_warn_text,
+    #tel_demo_text {
+      display: none;
+      color: red;
+      font-size: 12px;
+    }
+    #tel_demo_text {
+      color: pink;
+    }
+    #userInfo {
+      width: inherit;
+      display: inline-block;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div>
+      <input id='tel_input' type="text">
+      <span id='tel_warn_text'>请输入正确格式</span>
+      <span id='tel_demo_text'>请输入合法字符</span>
+    </div>
+    <span id='userInfo'>赵丽颖真可爱</span>
+  </div>
+  
+  <script src="./4-工厂方法模式/3-安全的工厂方法.js"></script>
+  <script src="./12-装饰者模式/2-输入框装饰者改造.js"></script>
+  <script src="./13-桥接模式/1.事件交互.js"></script>
+</body>
+</html>
