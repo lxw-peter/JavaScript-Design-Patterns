@@ -10,7 +10,9 @@
       margin: 0;
       padding: 0;
     }
-    
+    li {
+      list-style: none;
+    }
     #container {
       margin: 50px auto;
       width: 1280px;
@@ -35,6 +37,30 @@
       display: inline-block;
       text-align: center;
     }
+    
+    .new-container {
+      width: fit-content;
+      padding: 10px;
+      margin: 50px auto;
+      border: 1px solid #ccc;
+    }
+   
+    .new-container .normal {
+      margin-bottom: 5px;
+    }
+    .has-img {
+      overflow: hidden;
+    }
+    .has-img .img-news {
+      float: left;
+    }
+    .has-img .text {
+      display: block;
+    }
+    .small img {
+      width: 50px;
+    }
+    
   </style>
 </head>
 <body>
@@ -50,5 +76,6 @@
   <script src="./4-工厂方法模式/3-安全的工厂方法.js"></script>
   <script src="./12-装饰者模式/2-输入框装饰者改造.js"></script>
   <script src="./13-桥接模式/1.事件交互.js"></script>
+  <script src="./14-组合模式/1.新闻模块.js"></script>
 </body>
 </html>
