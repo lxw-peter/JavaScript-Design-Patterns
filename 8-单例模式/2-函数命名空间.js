@@ -15,3 +15,4 @@ var Utils = {
     this.g(id)['on' + type] = fn
   }
 }
+// module.exports = Utils

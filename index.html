@@ -37,14 +37,19 @@
       display: inline-block;
       text-align: center;
     }
-    
+    #news_box,
     .new-container {
       width: fit-content;
       padding: 10px;
       margin: 50px auto;
       border: 1px solid #ccc;
     }
-   
+    #news_box div {
+      margin-top: 5px;
+    }
+    #news_box div:nth-child(2n) {
+      background-color: #ccc;
+    }
     .new-container .normal {
       margin-bottom: 5px;
     }
@@ -72,10 +77,16 @@
     </div>
     <span id='userInfo'>赵丽颖真可爱</span>
   </div>
+  <div id="news_box">
+    <button id="next_page">下一页</button>
+  </div>
   
   <script src="./4-工厂方法模式/3-安全的工厂方法.js"></script>
   <script src="./12-装饰者模式/2-输入框装饰者改造.js"></script>
   <script src="./13-桥接模式/1.事件交互.js"></script>
   <script src="./14-组合模式/1.新闻模块.js"></script>
+  <script src="./8-单例模式/2-函数命名空间.js"></script>
+  <!-- <script src="./15-享元模式/1.新闻翻页功能.js"></script> -->
+  <script src="./15-享元模式/2.享元对象.js"></script>
 </body>
 </html>
