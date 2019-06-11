@@ -1,7 +1,7 @@
 // 格式化字符串方法
 function formateString (str, data) {
   return str.replace(/\{\{(\w+)\}\}/g, function (match, key) {
-    return (typeof data[key] === 'undefined' ) ? '' : data[key]
+    return (typeof data[key] === 'undefined') ? '' : data[key]
   })
 }
 
