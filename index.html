@@ -99,6 +99,24 @@
     .alert .cancel {
       margin-right: 15px;
     }
+    #nav1,
+    #nav2 {
+      width: 300px;
+      border: 1px solid #ccc;
+      margin: 30px auto;
+    }
+    .Observer{
+      margin: 30px auto;
+      border: 1px solid #ccc;
+      width: 400px;
+      text-align: center;
+    }
+    .Observer ul {
+      text-align: left;
+    }
+    .Observer li:nth-child(2n) {
+      background-color: #f0f0f0;
+    }
   </style>
 </head>
 <body>
@@ -114,6 +132,20 @@
     <button id="next_page">下一页</button>
   </div>
   
+  <div id="nav1"></div>
+  <div id="nav2"></div>
+
+  <div class="Observer">
+    <div>
+      <span id="user">原园</span>
+      等级：<span id="user_age">4</span>
+      消息：<span id="msg_num">0</span>
+    </div>
+    <h3>最新消息发布</h3>
+    <ul id="msg"></ul>
+    <textarea name="" id="user_input" cols="30" rows="10"></textarea>
+    <button id="user_submit">提交</button>
+  </div>
   <script src="./4-工厂方法模式/3-安全的工厂方法.js"></script>
   <script src="./12-装饰者模式/2-输入框装饰者改造.js"></script>
   <script src="./13-桥接模式/1.事件交互.js"></script>
@@ -122,5 +154,8 @@
   <!-- <script src="./15-享元模式/1.新闻翻页功能.js"></script> -->
   <script src="./15-享元模式/2.享元对象.js"></script>
   <script src="./16-模板方法模式/1.提示框归一化.js"></script>
+  <script src="./16-模板方法模式/2.创建多类导航.js"></script>
+  <script src="./17-观察者模式/1.观察者模式.js"></script>
+  <script type="module" src="./17-观察者模式/2.新闻评论模块.js"></script>
 </body>
 </html>

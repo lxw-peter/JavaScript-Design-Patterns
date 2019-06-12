@@ -6,6 +6,7 @@ var Flyweight = (function () {
     created.push(dom)
     return dom
   }
+
   return {
     getDiv: function () {
       if (created.length < 5) {
