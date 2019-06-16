@@ -65,6 +65,40 @@
     .small img {
       width: 50px;
     }
+    .alert {
+      border: 1px solid #ccc;
+      padding: 5px 10px;
+      position: absolute;
+      min-width: 200px;
+      width: fit-content;
+      top: 50%;
+      left: 50%;      
+      transform: translate(-50%, -50%);
+      z-index: 1000000;
+      background-color: #fff;
+    }
+    .alert .title {
+      display: inline-block;
+      font-weight: 500;
+      margin-bottom: 15px;
+    }
+    .alert .a-close {
+      position: absolute;
+      right: 5px;
+      top: 5px;
+      cursor: pointer;
+    }
+    .alert .content {
+      margin-bottom: 15px;
+    }
+    .alert .cancel,
+    .alert .confirm {
+      cursor: pointer;
+      float: right;
+    }
+    .alert .cancel {
+      margin-right: 15px;
+    }
     #nav1,
     #nav2 {
       width: 300px;
@@ -119,6 +153,7 @@
   <script src="./8-单例模式/2-函数命名空间.js"></script>
   <!-- <script src="./15-享元模式/1.新闻翻页功能.js"></script> -->
   <script src="./15-享元模式/2.享元对象.js"></script>
+  <script src="./16-模板方法模式/1.提示框归一化.js"></script>
   <script src="./16-模板方法模式/2.创建多类导航.js"></script>
   <script src="./17-观察者模式/1.观察者模式.js"></script>
   <script type="module" src="./17-观察者模式/2.新闻评论模块.js"></script>
