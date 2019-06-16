@@ -31,8 +31,10 @@ var Observer = (function () {
   }
 })()
 
-Observer.register('test', function (e) {
-  console.log(e.type, e.args.msg)
-})
+// Observer.register('test', function (e) {
+//   console.log(e.type, e.args.msg)
+// })
 
-Observer.fire('test', { msg: '参数' })
+// Observer.fire('test', { msg: '参数' })
+
+module.exports = Observer

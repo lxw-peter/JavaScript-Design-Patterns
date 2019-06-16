@@ -3,15 +3,18 @@
     var text = e.args.text
     var ul = $('msg')
     var li = createEle('li')
-    var span = createEle('span')
     li.innerHTML = text
-    span.onclick = function () {
+    var removeBtn = createEle('button')
+    removeBtn.innerHTML = '删除'
+    removeBtn.className = 'removeBtn'
+    removeBtn.style.float = 'right'
+    removeBtn.onclick = function () {
       ul.removeChild(li)
       Observer.fire('removeCommentMessage', {
         num: -1
       })
     }
-    li.appendChild(span)
+    li.appendChild(removeBtn)
     ul.appendChild(li)
   }
   Observer.register('addCommentMessage', addMsgItem)
@@ -24,7 +27,7 @@
   }
   Observer
     .register('addCommentMessage', changeMsgNum)
-    // .register('removeCommentMessage', changeMsgNum)
+  Observer.register('removeCommentMessage', changeMsgNum)
 })();
 
 (function () {
