@@ -1,3 +1,4 @@
+
 (function () {
   function addMsgItem (e) {
     var text = e.args.text

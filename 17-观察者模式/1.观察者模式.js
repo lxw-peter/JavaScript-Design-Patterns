@@ -37,4 +37,4 @@ var Observer = (function () {
 
 // Observer.fire('test', { msg: '参数' })
 
-module.exports = Observer
+

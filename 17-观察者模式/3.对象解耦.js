@@ -1,4 +1,4 @@
-const Observer = require('./1.观察者模式')
+import Observer from './1.观察者模式'
 var Student = function (result) {
   var that = this
   that.result = result
