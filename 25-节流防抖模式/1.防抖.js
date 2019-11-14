@@ -15,3 +15,14 @@ function debounce (fn, timeForWait = 1000) {
 window.addEventListener('scroll', debounce(function () {
   console.log(111)
 }))
+
+// 给事件传递参数
+function addEvent (dom, type, fn, data) {
+  dom.addEventListener(type, function (e) {
+    fn.call(dom, e, data)
+  })
+}
+
+addEvent(document, 'click', function (e, data) {
+  console.log(data)
+}, 10)
