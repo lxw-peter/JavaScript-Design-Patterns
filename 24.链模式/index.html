@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      margin: auto;
+      width: 100px;
+      height: 100px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box" id="box1">盒子1</div>
+  <div class="box" id="box2">盒子2</div>
+  <div class="box" id="box3">盒子3</div>
+  <div class="box" id="box4">盒子4</div>
+  <script type="module">
+    import $ from './mini-jquery.js'
+    $('#box1').html('<span>测试html</span>');
+    $('#box2').html('测试text');
+    $('.box:nth-child(3)')
+      .on('click', function () {
+        alert('盒子3')
+      })
+      .text('点击成功');
+    $('#box4').css('border-color', 'red').css({
+      background: '#ccc'
+    }).attr('title', '测试HTML属性添加').attr({
+      'data-title': '测试对象性方法是的属性添加'
+    })
+  </script>
+</body>
+
+</html>
